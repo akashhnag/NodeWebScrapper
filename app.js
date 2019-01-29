@@ -7,7 +7,8 @@ rp(url).then((html)=>{
     let presidents_list=[];
     for(i=0;i<45;i++){
        presidents_list.push($('big > a', html)[i].attribs.href);
-       potusParse('https://en.wikipedia.org/'+$('big > a', html)[i].attribs.href)
+       //potusParse('https://en.wikipedia.org/'+$('big > a', html)[i].attribs.href)
+       potusParse('https://en.wikipedia.org/'+presidents_list[i])
     }
       
 })
